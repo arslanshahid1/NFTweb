@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+
+    <title>Home</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top py-2">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span class="green">NFT</span> WEB</a>
+            <button class="navbar-toggler navbar-light bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item  mx-md-4">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item  mx-md-4">
+                        <a class="nav-link" href="#roadmap">Features</a>
+                    </li>
+                    <li class="nav-item mx-md-4">
+                        <a class="nav-link" href="#rarity">Roadmap</a>
+                    </li>
+                    <li class="nav-item mx-md-4">
+                        <a class="nav-link" href="#faq">Team</a>
+                    </li>
+                    <li class="nav-item mx-md-4">
+                        <a class="nav-link" href="#team">Faq</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <a href="" class="btn btn-outline-success join-btn px-3">Join on <i class="discord"><svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="35px" height="35px"><path d="M42.298,11.65c-0.676-1.021-1.633-1.802-2.768-2.256c-2.464-0.988-4.583-1.648-6.479-2.02	C31.721,7.114,30.404,7.768,29.771,9l-0.158,0.308c-1.404-0.155-2.895-0.207-4.593-0.164c-1.741-0.042-3.237,0.009-4.643,0.164	L20.22,9c-0.633-1.232-1.952-1.885-3.279-1.625c-1.896,0.371-4.016,1.031-6.479,2.02c-1.134,0.454-2.091,1.234-2.768,2.256	c-4.721,7.131-6.571,14.823-5.655,23.517c0.032,0.305,0.202,0.578,0.461,0.741c3.632,2.29,6.775,3.858,9.891,4.936	c1.303,0.455,2.748-0.054,3.517-1.229l1.371-2.101c-1.092-0.412-2.158-0.9-3.18-1.483c-0.479-0.273-0.646-0.884-0.373-1.363	c0.273-0.481,0.884-0.65,1.364-0.373c3.041,1.734,6.479,2.651,9.942,2.651s6.901-0.917,9.942-2.651	c0.479-0.277,1.09-0.108,1.364,0.373c0.273,0.479,0.106,1.09-0.373,1.363c-1.056,0.603-2.16,1.105-3.291,1.524l1.411,2.102	c0.581,0.865,1.54,1.357,2.528,1.357c0.322,0,0.647-0.053,0.963-0.161c3.125-1.079,6.274-2.649,9.914-4.944	c0.259-0.163,0.429-0.437,0.461-0.741C48.869,26.474,47.019,18.781,42.298,11.65z M18.608,28.983c-1.926,0-3.511-2.029-3.511-4.495	c0-2.466,1.585-4.495,3.511-4.495s3.511,2.029,3.511,4.495C22.119,26.954,20.534,28.983,18.608,28.983z M31.601,28.957	c-1.908,0-3.478-2.041-3.478-4.522s1.57-4.522,3.478-4.522c1.908,0,3.478,2.041,3.478,4.522S33.509,28.957,31.601,28.957z"></path></svg></i></a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="cover d-flex justify-content-center align-items-center">
+        <div class="container m-sm-5" id="timer">
+            <div class="timer col-lg-8 d-flex flex-column p-2 py-4 p-sm-5 m-auto">
+                <h2 class="text-left col-12 my-4">Launching on<br> <span class="date">October 16th</span></h2>
+                <div class="col-12 d-flex flex-column justify-content-center">
+                    <div class="row text-center justify-content-around time">
+                        <div class="col-2 box">
+                            <h3 id="daysTimer">0</h3>
+                            <h4>Days</h4>
+                        </div>
+                        <div class="col-2 box">
+                            <h3 id="hoursTimer">0</h3>
+                            <h4>Hrs</h4>
+                        </div>
+                        <div class="col-2 box">
+                            <h3 id="minutesTimer">0</h3>
+                            <h4>Min</h4>
+                        </div>
+                        <div class="col-2 box">
+                            <h3 id="secondsTimer">0</h3>
+                            <h4>Sec</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container m-sm-5" id="mint">
+            <div class="mint col-lg-8 col-xl-6p-2 py-4 p-sm-5 m-auto">
+                <h2 class="col-12">Mint your penguin</h2>
+                <div class="col-12 d-flex flex-column mt-3">
+                    <div class="d-flex align-items-center">
+                        <div class="balance col-12 d-flex p-3">
+                            <div class="mr-auto">
+                                Your ETH Balance
+                            </div>
+                            <div class="ml-auto ">
+                                0.00ETH
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row quantity mt-4 d-flex align-items-center">
+                        <div class="col-6">
+                            Quantity
+                        </div>
+                        <div class="col-6">
+                            <input type="number" class="form-control py-4 " min="0" placeholder="1">
+                        </div>
+                    </div>
+                    <div class="row p-1 px-3 mt-3 d-flex align-items-center justify-content-center">
+                        <p class="mr-auto mt-2">Total price</p>
+                        <p class="ml-auto mt-2 ">0.00ETH</p>
+                    </div>
+                    <button class="btn btn-success col-12 py-3 mt-3">Buy Now</button>
+                    <div class="row p-1 px-3 mt-3 mb-0 d-flex align-items-center justify-content-center">
+                        <p class="mr-auto mt-2">Progress</p>
+                        <p class="ml-auto mt-2 ">10%</p>
+                    </div>
+                    <div class="progress mt-n3 " style="height: 20px;">
+                        <div class="progress-bar" role="progressbar" style="width: 15%;" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="welcome ">
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/13.png" width="90%" alt="" srcset="">
+                </div>
+                <div class="col-md-6">
+                    <h4>Welcome to the</h4>
+                    <h2>Wealthy Club </h2>
+                    <p>The WEALTHY PENGUIN ISLAND CLUB is an exclusive collection of 5 000 wealthy penguin NFTs—unique digital collectibles. They are stored as ERC-721 tokens on the Ethereum blockchain and hosted on IPFS. Your Wealthy Penguin also doubles
+                        as access to our private business network, the AIRPORT LOUNGE, a virtual networking lounge, and finally our NFT’s represent access to our future private island community accessible only to our members. More perks and benefits will
+                        be unlocked for our community throughout the evolution of our roadmap.</p>
+                    <p>With more than 160+ hand drawn traits, each NFT is unique and represents a business card to our exclusive group of successful investors & philanthropists. Join our global community of diverse entrepreneurs with access to once in a
+                        lifetime experiences, benefits and utilities.</p>
+                    <button class="btn btn-success"> Join Us <i class="fa fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Features</h4>
+                    <h2>An Exclusive Wealthy Club </h2>
+                    <p>In 2021 during the height of a global pandemic a call was made to global minded entrepreneurs in cities around the world to bring together the world's most successful entrepreneurs who want to give back. They were tasked with creating
+                        a new members club that would give back through philanthropy. This entity would eventually be called the Wealthy Penguin Club. A place where high level thinkers, investors, and entrepreneurs get together to network and solve the
+                        world's biggest problem while having fun. The final container of the project will be a new community on a private island only known to its members. </p>
+                    <button class="btn btn-success"> Join Us <i class="fa fa-arrow-right"></i></button>
+                </div>
+                <div class="col-md-6 mt-3 mt-md-0">
+                    <div class="row">
+                        <img src="images/14.png" width="100%" alt="" class="col-6 p-1">
+                        <img src="images/15.png" width="100%" alt="" class="col-6 p-1">
+                        <img src="images/14.png" width="100%" alt="" class="col-6 p-1">
+                        <img src="images/15.png" width="100%" alt="" class="col-6 p-1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="philantrophic">
+        <div class="container p-5">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6">
+                    <img src="images/19.png" width="90%" alt="">
+                </div>
+                <div class="col-md-6">
+                    <h2>Philantrophic Focus</h2>
+                    <p>The Wealth Penguins care about giving back. We have set aside 10% of our primary sale to be donated to a charity voted on by our members. In addition, 5% of every secondary sale will be donated to vulnerable populations around the
+                        world forever. That’s truly giving back.
+                    </p>
+                    <button class="btn btn-success"> Join Us <i class="fa fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="col-12 lucky p-3 p-sm-5 mt-3 mt-sm-5">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h2>Lucky Penguins</h2>
+                    </div>
+                    <div class="col-md-9">
+                        <p>7 of our penguins are lucky. They grant it’s owners passive income of .07 ETH per month for life. After our main sale we will airdrop the 7 penguins to lucky owners. Yes that’s right if you are lucky enough to get one of these
+                            then you will have .07 ETH sent to your account each month forever.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 pictures mt-5">
+                <div class="row">
+                    <img src="images/16.png" width="100%" class="col-4 col-sm-2 p-1" alt="">
+                    <img src="images/17.png" width="100%" class="col-4 col-sm-2 p-1" alt="">
+                    <img src="images/18.png" width="100%" class="col-4 col-sm-2 p-1" alt="">
+                    <img src="images/16.png" width="100%" class="col-4 col-sm-2 p-1" alt="">
+                    <img src="images/17.png" width="100%" class="col-4 col-sm-2 p-1" alt="">
+                    <img src="images/18.png" width="100%" class="col-4 col-sm-2 p-1" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="roadmap py-5">
+        <div class="container">
+            <h2 class="text-center heading">Launch <span class="green">Roadmap</span></h2>
+            <hr class="mx-auto my-3 line">
+            <p class="sub-heading mx-auto text-center">As we encourage participation from our members to create solutions, our roadmap will be updated and evolve in the coming months and years. </p>
+
+            <div class="timeline">
+                <div class="container1 right">
+                    <div class="content">
+                        <h2>10% PLANE IS BOARDING</h2>
+                        <p>
+                            Hurry up! Your plan is boarding, make sure you have your priority first class boarding pass. Just show your penguin to the concierge so you can get seated. Join our community on Discord. Grab a Wealthy Penguin and flap your penguin wings in excitement.
+                            After we sell out we will airdrop 7 Lucky Penguins to 7 random members. These will pay you .07 ETH every month for the rest of your life. </p>
+                    </div>
+                </div>
+                <div class="container1 left">
+                    <div class="content">
+                        <h2>25 % AIRPORT LOUNGE</h2>
+                        <p>
+                            Your penguin gives you exclusive access to our Airport Lounge, a virtual space with some of the top investors, celebrity entrepreneurs, and location independent entrepreneurs. Meeting top influencers, celebrities, thought leaders whether you’re scrolling
+                            on your laptop or phone has never been so easy </p>
+                    </div>
+                </div>
+                <div class="container1 right">
+                    <div class="content">
+                        <h2>75 % PARTY TIME </h2>
+                        <p>
+                            Our initial networking will take place both online but also in secret meetups around the world depending on where our community is located. Imagine meeting at a secret bar near the Eiffel tower or a private resort mastermind in Bali, Indonesia. We’re
+                            going to be holding masterminds to solve the world's biggest problems while having fun with new friends and business partners. We’re dedicating 1% of our Opensea fees to cover the costs of these events, all you’ll have to do
+                            is show up. Our new year's yacht party on Dec 31st, 2021 will be our first opportunity. </p>
+                    </div>
+                </div>
+                <div class="container1 left">
+                    <div class="content">
+                        <h2>100 % NOMADA ISLAND</h2>
+                        <p>
+                            Our final stop is NOMADA, a private island where we can come and go as we please. This is the ultimate haven for the world’s top thinkers, intellectuals and creatives. You are welcome to bring family along as long as you own a wealthy penguin.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="development py-5">
+        <div class="container">
+            <h2 class="text-center heading">Development <span class="green">Roadmap</span></h2>
+            <hr class="mx-auto my-3 line">
+            <p class="sub-heading mx-auto text-center">We have a strong belief in ROI as entrepreneurs so we’ve built in different mechanisms to allow the floor price to increase after our initial launch and in coming years through different additions to our project.</p>
+            <div class="col-12">
+                <div class="row d-flex">
+                    <div class="col-md-6 my-2 d-flex align-items-stretch">
+                        <div class="col-12 dev1  p-4">
+                            <h2>Airport Lounge</h2>
+                            <p>Our virtual Airport Lounge is where you go and network with people from diverse fields to find deals, share about your business or project and even find new business partners. We will be sharing access to this private hub for
+                                you to meet our wonderful members in an informal setting optimized for not just business deals but also making friends.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-2 d-flex align-items-stretch">
+                        <div class="col-12 dev1  p-4">
+                            <h2>Inner Circle</h2>
+                            <p>The most active members of our community will be invited to our elite member group, a private lounge that exists virtually and in-person where our biggest members hang out. We will share more of this later.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-2 d-flex align-items-stretch">
+                        <div class="col-12 dev1  p-4">
+                            <h2>Community REWARDS
+                            </h2>
+                            <p>We’ve dedicated 2.5% of our secondary sales to redistribute to our community. We do this by staking our ETH on an ongoing basis and paying out earnings every single quarter. This way by holding on to our NFT you continue to
+                                earn just for being a part of our community.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-2 d-flex align-items-stretch">
+                        <div class="col-12 dev1  p-4">
+                            <h2>PARTICIPATE IN ISLAND BUILDING </h2>
+                            <p>Every week our architect will be live creating new elements of our future private island and you’ll be able to tune in to participate, give feedback, and contribute to the building of our future private island community. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-2 d-flex align-items-stretch">
+                        <div class="col-12 dev1  p-4">
+                            <h2>EVOLUTION OF THE RANKS</h2>
+                            <p>Stay engaged! By regularly participating you unlock privilege to lead discussions and initiatives towards our private island and decision making on where our secret lead up events and meetups will take place.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-2 d-flex align-items-stretch">
+                        <div class="col-12 dev1  p-4">
+                            <h2>ANNUAL INCOME
+                            </h2>
+                            <p>Being part of the Wealthy Penguin Club will give you the right to an annual bonus based on the number of NFTs (from our collection) you possess. The more you own the more entries you get for the annual bonus. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-2 d-flex align-items-stretch">
+                        <div class="col-12 dev1  p-4">
+                            <h2>CELEB ENTREPRENEURS</h2>
+                            <p>We have already had notable names join our club but we will go after the biggest names in philanthropy and in entrepreneurs and business so we can increase the value of what it means to be a Wealthy Penguin. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-2 d-flex align-items-stretch">
+                        <div class="col-12 dev1  p-4">
+                            <h2>YEARLY NEW YEAR S YACHT PARTY</h2>
+                            <p>Every year we hold a massive new years party for our members. For this year 2021 we are considering locations like Bali, Dubai, Santorini, Monaco, Spain. The location will depend on where most of our members are located and
+                                travel precautions. This is another opportunity to network with some of our biggest members who join our special events.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="specs py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 heading">The <span class="green">Specs</span></h2>
+            <div class="col-12">
+                <div class="row d-flex">
+                    <div class="col-md-4 align-items-stretch d-flex">
+                        <div class="col-12 box p-3">
+                            <h2>Utility</h2>
+                            <p>As a member of the Wealthy Penguin Club, you will soon realize the use of your token unlocks access to experiences and expectations greater than your wildest imagination and a massive return on your initial investment.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 align-items-stretch d-flex">
+                        <div class="col-12 box p-3">
+                            <h2>Community</h2>
+                            <p>Our community is the heart of our mission to change the world while having fun. We encourage you to always let your voice be heard. Share how we can improve and what initiatives you would live to be a part of creating.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 align-items-stretch d-flex">
+                        <div class="col-12 box p-3">
+                            <h2>Unique</h2>
+                            <p>Once you receive your NFT it will be a 1 of 1. No other NFT will ever be created like it. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 align-items-stretch d-flex">
+                        <div class="col-12 box p-3">
+                            <h2>Entrepreneurs That Care</h2>
+                            <p>We’re very successful people in the world’s eyes but we also care so much about giving back especially to vulnerable populations around the world. 10% of our initial sale and 5% of royalties will forever be dedicated to cultural
+                                and social impact as voted on by our community</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 align-items-stretch d-flex">
+                        <div class="col-12 box p-3">
+                            <h2>Privacy</h2>
+                            <p>There are 5,000 of us but this doesn’t mean we share our vision with the world. We must stay focused on the impact we want to make and less on outside noise. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="team py-5">
+        <div class="container">
+            <h2 class="text-center heading">Our <span class="green">Team</span></h2>
+            <hr class="mx-auto my-3 line">
+            <p class="sub-heading mx-auto text-center">The Wealthy Penguin Island club was founded by a diverse group of entrepreneurs, investors, artists, cryptocurrency mavericks, architects, and some of the world's top creatives. We are driven by being the best in our natural talents for the
+                greater good and failure is not an option. </p>
+            <div class="col-12 mt-3">
+                <div class="row">
+                    <div class="col-md-3 col-6 member my-3">
+                        <div class="col-12">
+                            <img src="images/19.png" width="100%" alt="" class="mb-3">
+                            <h3>Olumide Penguin</h3>
+                            <h4 class="mb-4">Designation</h4>
+                            <a href="#" class="icon"><img src="images/linkedin.svg" alt=""></a>
+                            <a href="#" class="icon"><img src="images/twitter.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 member my-3">
+                        <div class="col-12">
+                            <img src="images/20.png" width="100%" alt="" class="mb-3">
+                            <h3>Olumide Penguin</h3>
+                            <h4 class="mb-4">Designation</h4>
+                            <a href="#" class="icon"><img src="images/linkedin.svg" alt=""></a>
+                            <a href="#" class="icon"><img src="images/twitter.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 member my-3">
+                        <div class="col-12">
+                            <img src="images/21.png" width="100%" alt="" class="mb-3">
+                            <h3>Olumide Penguin</h3>
+                            <h4 class="mb-4">Designation</h4>
+                            <a href="#" class="icon"><img src="images/linkedin.svg" alt=""></a>
+                            <a href="#" class="icon"><img src="images/twitter.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 member my-3">
+                        <div class="col-12">
+                            <img src="images/22.png" width="100%" alt="" class="mb-3">
+                            <h3>Olumide Penguin</h3>
+                            <h4 class="mb-4">Designation</h4>
+                            <a href="#" class="icon"><img src="images/linkedin.svg" alt=""></a>
+                            <a href="#" class="icon"><img src="images/twitter.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------ FAQ ---------------------------- -->
+    <div id="faq"></div>
+    <div class="faq py-5">
+        <div class="container  py-5">
+            <h2 class="text-center heading">Frequently Asked <span class="green">Questions</span></h2>
+            <hr class="mx-auto my-3 line">
+            <div class="faqs-accordion mt-5">
+                <div class="accordion" id="accordionExample">
+                    <div class="card my-1">
+                        <div class="card-header d-flex align-items-center  pl-0  my-3" id="headingOne">
+                            <button type="button" class="btn btn-link  pl-0 py-0" data-toggle="collapse" data-target="#collapseOne">
+                                HOW MANY WEALTHY PENGUINS CAN I MINT ?
+                                 </button>
+                            <i class="fa fa-plus ml-auto" data-toggle="collapse" data-target="#collapseOne"></i>
+                        </div>
+                        <div id="collapseOne" class="collapse pl-0" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body ">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nihil iure, neque repellat quae mollitia dolorum dolore porro alias deserunt?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card my-1">
+                        <div class="card-header d-flex align-items-center  pl-0  my-3" id="headingTwo">
+                            <button type="button" class="btn btn-link  pl-0 py-0" data-toggle="collapse" data-target="#collapseTwo">
+                                WHERE CAN I VIEW MY NFTS ?
+                                 </button>
+                            <i class="fa fa-plus ml-auto" data-toggle="collapse" data-target="#collapseTwo"></i>
+                        </div>
+                        <div id="collapseTwo" class="collapse pl-0" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis numquam rerum tempora possimus eligendi est officia adipisci suscipit sit maiores.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card my-1">
+                        <div class="card-header d-flex align-items-center  pl-0  my-3" id="headingThree">
+                            <button type="button" class="btn btn-link  pl-0 py-0" data-toggle="collapse" data-target="#collapseThree">
+                                IS THERE A PRESALE ?
+                                 </button>
+                            <i class="fa fa-plus ml-auto" data-toggle="collapse" data-target="#collapseThree"></i>
+                        </div>
+                        <div id="collapseThree" class="collapse pl-0" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo similique eos debitis sequi officiis dicta aperiam quaerat. Architecto, doloremque iusto.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card my-1">
+                        <div class="card-header d-flex align-items-center  pl-0  my-3" id="headingFour">
+                            <button type="button" class="btn btn-link  pl-0 py-0" data-toggle="collapse" data-target="#collapseFour">
+                                WHEN WILL I BE ABLE TO MINT THE WEALTHY PENGUIN ?
+                                 </button>
+                            <i class="fa fa-plus ml-auto" data-toggle="collapse" data-target="#collapseFour"></i>
+                        </div>
+                        <div id="collapseFour" class="collapse pl-0" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt autem iure quia accusamus libero eum fugit laborum odio, soluta dolore.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card my-1">
+                        <div class="card-header d-flex align-items-center  pl-0  my-3" id="headingFive">
+                            <button type="button" class="btn btn-link  pl-0 py-0" data-toggle="collapse" data-target="#collapseFive">
+                                WHERE IS OUR PRIVATE ISLAND ?
+                                 </button>
+                            <i class="fa fa-plus ml-auto" data-toggle="collapse" data-target="#collapseFive"></i>
+                        </div>
+                        <div id="collapseFive" class="collapse pl-0" aria-labelledby="headingFive" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur officia laboriosam obcaecati voluptatibus eligendi rerum dolorem rem saepe, animi quasi./p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------- Footer ------------------------------ -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- <div class="col-2"> -->
+                <h2 class="col-md-2"><span class="green">NFT</span> WEB</h2>
+                <!-- </div> -->
+                <div class="col-md-6 d-flex flex-row justify-content-between align-items-center">
+                    <h5 class="d-none d-md-block">|</h5>
+                    <a href="">Privacy Policy</a>
+                    <a href=""> Terms of Service </a>
+                    <a href="">Help!</a>
+                    <h5 class="d-none d-md-block">|</h5>
+
+                </div>
+                <div class="col-md-4 d-flex flex-row align-items-center justify-content-between">
+                    <p class="mt-3">Find us on social media</p>
+                    <a href="#" class="icon mx-2"><img src="images/linkedin.svg" width="20px" alt=""></a>
+                    <a href="#" class="icon mx-2"><img src="images/facebook.svg" width="20px" alt=""></a>
+                    <a href="#" class="icon mx-2"><img src="images/insta.svg" width="20px" alt=""></a>
+                    <a href="#" class="icon mx-2"><img src="images/twitter.svg" width="20px" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="counter.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
